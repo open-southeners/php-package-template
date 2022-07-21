@@ -23,7 +23,11 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenSoutheners\\PhpPackage\\": "src",
+            "OpenSoutheners\\PhpPackage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "OpenSoutheners\\PhpPackage\\Tests\\": "tests"
         }
     },
