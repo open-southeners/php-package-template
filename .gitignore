@@ -4,3 +4,6 @@ composer.lock
 .phpunit.result.cache
 phpunit.xml
 .DS_Store
+coverage
+clover.xml
+.coverage-cache
