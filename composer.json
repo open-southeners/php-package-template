@@ -8,7 +8,8 @@
     "authors": [
         {
             "name": "Ruben Robles",
-            "email": "d8vjork@outlook.com"
+            "email": "d8vjork@outlook.com",
+            "homepage": "https://d8vjork.com"
         }
     ],
     "require": {
