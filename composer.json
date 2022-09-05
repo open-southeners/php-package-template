@@ -37,7 +37,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "OpenSoutheners\\PhpPackage\\JsonApiServiceProvider"
+                "OpenSoutheners\\PhpPackage\\ServiceProvider"
             ]
         }
     },
