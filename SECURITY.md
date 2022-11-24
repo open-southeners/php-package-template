@@ -12,4 +12,4 @@ We're also following the [Laravel's default support policy](https://laravel.com/
 
 ## Reporting a Vulnerability
 
-Send us an email at developers@open-southeners.com
+Send us an email at security@opensoutheners.com
