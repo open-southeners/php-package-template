@@ -11,14 +11,17 @@ jobs:
       matrix:
         os: [ ubuntu-latest ]
         php: [ 8.0, 8.1, 8.2 ]
-        laravel: [ 8.*, 9.* ]
+        laravel: [ 9.*, 10.* ]
         dependency-version: [ prefer-stable ]
         include:
-          - laravel: 8.*
-            testbench: 6.*
-          
           - laravel: 9.*
             testbench: 7.*
+
+          - laravel: 10.*
+            testbench: 8.*
+        exclude:
+          - laravel: 10.*
+            php: 8.0
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }} - ${{ matrix.os }}
 
@@ -56,7 +59,7 @@ jobs:
 
       - name: Deploy coverage to codacy
         uses: codacy/codacy-coverage-reporter-action@v1
-        if: matrix.php == '8.2' && matrix.laravel == '9.*'
+        if: matrix.php == '8.2' && matrix.laravel == '10.*'
         with:
           # project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           api-token: ${{ secrets.CODACY_API_TOKEN }}
