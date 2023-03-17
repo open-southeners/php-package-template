@@ -12,15 +12,22 @@
             "homepage": "https://d8vjork.com"
         }
     ],
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/open-southeners"
+        }
+    ],
     "require": {
-        "php": "^8.0|^8.1|^8.2"
+        "php": "^8.0 || ^8.1 || ^8.2"
     },
     "require-dev": {
         "nunomaduro/larastan": "^2.0",
+        "orchestra/testbench": "^7.0 || ^8.0",
         "phpstan/phpstan": "^1.0",
-        "phpunit/phpunit": "^9.0|^10.0",
-        "orchestra/testbench": "^7.0|^8.0"
+        "phpunit/phpunit": "^9.0 || ^10.0"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "OpenSoutheners\\PhpPackage\\": "src"
@@ -40,6 +47,5 @@
                 "OpenSoutheners\\PhpPackage\\ServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
